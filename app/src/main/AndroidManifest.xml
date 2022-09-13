@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.cn.bookadminister">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appcon"
+        android:label="校园快递管理"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UseraddActivity"
+            android:label="@string/title_activity_useradd"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".UserdeleteActivity"
+            android:label="@string/title_activity_userdelete"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangepwdActivity"
+            android:label="@string/title_activity_changepwd"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OnlineComplaintActivity"
+            android:label="@string/title_activity_online_complaint"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComplaintActivity"
+            android:exported="true" />
+        <activity
+            android:name=".UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SearchPacksActivity" />
+        <activity android:name=".QueryPacksActivity" />
+        <activity android:name=".DeletePacksActivity" />
+        <activity android:name=".AddPacksActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ManagerActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
